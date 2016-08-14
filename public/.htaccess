@@ -1,12 +1,10 @@
-<IfModule mod_rewrite.c>
-    <IfModule mod_negotiation.c>
-        Options -MultiViews
-    </IfModule>
+Options +FollowSymlinks
+RewriteEngine on
+RewriteBase /
+RewriteCond %{HTTP_HOST} ^www\.(.+)$ [NC]
+RewriteRule ^(.*)$ http://%1/$1 [R=301,L]
 
-    RewriteEngine On
-
-	RewriteCond %{HTTP_HOST} ^mulkifebrianto.tk$ [NC,OR]
-	RewriteCond %{HTTP_HOST} ^www.mulkifebrianto.tk$
-	RewriteCond %{REQUEST_URI} !folder/
-	RewriteRule (.*) /public/$1 [L]
-</IfModule>
+# Rewrite URL to forward to a folder
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ public/$1 [L,QSA]
