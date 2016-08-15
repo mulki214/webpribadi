@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Laravel</title>
+        <title>Mulki Febrianto</title>
 
         <link href="https://fonts.googleapis.com/css?family=Lato:100" rel="stylesheet" type="text/css">
 
@@ -31,14 +31,14 @@
             }
 
             .title {
-                font-size: 96px;
+                font-size: 80px;
             }
         </style>
     </head>
     <body>
         <div class="container">
             <div class="content">
-                <div class="title">Laravel 5</div>
+                <div class="title">Sorry This Web Under Reconstruction :( <br/>- Mulki Febrianto -</div>
             </div>
         </div>
     </body>
