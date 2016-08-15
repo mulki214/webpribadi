@@ -6,7 +6,7 @@ APP_URL=http://www.mulkifebrianto.tk
 DB_HOST=mysql
 DB_DATABASE=u730252118_netud
 DB_USERNAME=u730252118_meruh
-DB_PASSWORD=vaSyHegaMe
+DB_PASSWORD=mmulki2130
 
 CACHE_DRIVER=file
 SESSION_DRIVER=file
